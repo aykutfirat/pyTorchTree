@@ -1,5 +1,5 @@
 PyTorch implementation of 
-1) RNN: Recursive Neural Network from https://nlp.stanford.edu/~socherr/EMNLP2013_RNTN.pdf
+1) RNN: Recursive Neural Network from https://nlp.stanford.edu/~socherr/EMNLP2013_RNTN.pdf<br>
    python RecursiveNN.py
 2) TreeLSTM from https://arxiv.org/abs/1503.00075
    python TreeLSTM.py
