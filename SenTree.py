@@ -68,7 +68,7 @@ class SenTree(ParentedTree):
         for subtree in tree.subtrees():
             subtree.set_label(int(subtree.label()))
 
-trees = SenTree.getTrees()
+#trees = SenTree.getTrees()
 
 
 
