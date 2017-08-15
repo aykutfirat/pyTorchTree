@@ -39,7 +39,7 @@ class TreeLSTM(nn.Module):
             i = F.sigmoid(self.Ui(e))
             o = F.sigmoid(self.Uo(e))
             u = self.activation(self.Uu(e))
-            c = i * u + F.sigmoid(self.Uf1(leftH)) * leftH + F.sigmoid(self.Uf2(rightH)) * rightH
+            c = i * u + F.sigmoid(self.Uf1(leftH)) * leftC + F.sigmoid(self.Uf2(rightH)) * rightC
         h = o * self.activation(c)
         self.nodeProbList.append(self.projection(h))
         self.labelList.append(torch.LongTensor([node.label()]))
